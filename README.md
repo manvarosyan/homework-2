@@ -30,9 +30,9 @@ This repository contains solutions to the assignments on **fork** and **exec** s
 - Child executes `/bin/ls` using `execl()`.  
 - Parent waits for the child (`wait(NULL)`) and prints `"Parent process done"`.  
 - Flow:  
-  1. `fork()` → 2 processes.  
-  2. Child: `execl("ls")`.  
-  3. Parent: waits → prints message.
+  - `fork()` → 2 processes.  
+  - Child: `execl("ls")`.  
+  - Parent: waits → prints message.
 
 ---
 
@@ -70,9 +70,9 @@ This repository contains solutions to the assignments on **fork** and **exec** s
 - Child executes `/usr/bin/grep "main" test.txt`.  
 - Parent waits, then prints `"Parent process completed"`.  
 - Flow:  
-  1. Parent forks.  
-  2. Child runs `grep`.  
-  3. Parent waits → prints message.  
+  - Parent forks.  
+  - Child runs `grep`.  
+  - Parent waits → prints message.  
 - Shows how multiple arguments are passed to `execl` (`grep`, search term, file name).
 
 ---
